@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: service-employee
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservice-nttdata
+    username: ENC(ZNoH5grjfhnd7yrd6m/okBcqvB8bapLf)
+    password: ENC(1oBvJTVaQobZP7LaVgZv+NWJVBU3WdrG)
+ 
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
   
 eureka:
   instance:
