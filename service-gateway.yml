@@ -13,3 +13,7 @@ spring:
           uri: http://localhost:8091
           predicates:
             - Path=/api/employee/**
+        - id: company
+          uri: http://localhost:8095
+          predicates:
+            - Path=/api/company/**
