@@ -7,8 +7,8 @@ spring:
     name: service-user
   datasource:
     url: jdbc:mysql://localhost:3306/microservice-nttdata
-    username: root
-    password: mysql
+    username: ENC(VquH1OZEI2kJanP78MAHW7qU3VlKqfgP)
+    password: ENC(Dxko85RBJ9aePmhXQQl0vQofCQNj0hJ9)
  
 jasypt:
   encryptor:
