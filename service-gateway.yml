@@ -17,9 +17,11 @@ spring:
            #- JwtAuthenticationFilter
            - StripPrefix=2
         - id: company
-          uri: lb://servicio-auth
+          uri: lb://service-company
           predicates:
             - Path=/api/company/**
+        - id: servicio-auth
+          uri: lb://servicio-auth
           predicates:
             - Path=/api/servicio-auth/**
           filters:
