@@ -10,11 +10,11 @@ spring:
           enable: true
       routes:
         - id: employee
-          uri: lb://service-employee
+          uri: http://localhost:8095
           predicates:
             - Path=/api/employee/**
           filters:
-           #- JwtAuthenticationFilter
+           - JwtAuthenticationFilter
            - StripPrefix=2
         - id: company
           uri: lb://service-company
