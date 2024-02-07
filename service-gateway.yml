@@ -14,7 +14,7 @@ spring:
           predicates:
             - Path=/api/employee/**
           filters:
-           #- JwtAuthenticationFilter
+            - JwtAuthenticationFilter
            #- StripPrefix=2
         - id: company
           uri: lb://service-company
