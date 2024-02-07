@@ -10,7 +10,7 @@ spring:
           enable: true
       routes:
         - id: employee
-          uri: lb://employee
+          uri: lb://service-employee
           predicates:
             - Path=/api/employee/**
           filters:
